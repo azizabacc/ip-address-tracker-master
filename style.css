@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 35%;
+    width: 100%;
+    padding-bottom: 10%;
+    background-size: cover;
+
+
+
+
+}
+#inputContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+input{
+    height: inherit;
+    width: 75%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    font-size: 25PX;
+ 
+}
+#arrowContainer{
+    display: flex;
+    background-color: black;
+    height: inherit;
+    border-radius: 0 10px 10px 0;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#resumeBord{
+    background: white;
+    z-index: 2;
+    position: relative;
+    top: 30%;
+    width: 60%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+
+}
+.column{
+    text-align: center;
+}
+.info{    font-weight: normal;}
+.divTitle{
+    color: grey;
+    font-weight: bold;
+}
+
+#title{
+    color: white;
+}
+#map {
+    position:absolute;
+    z-index: 1;
+    height: 65%; 
+    width: 100%;
+    top: 35vh;
+  }
+@media only screen and (max-width: 375px) {
+    #inputContainer{
+        width: 80%;
+    }
+    #resumeBord{
+        flex-direction: column;
+        align-items: center;
+        padding: 28px
+    }
+ input{
+    padding: 5px;
+
+ }
+ #arrowContainer{    padding: 5px;
+ }
+}
+@media only screen and (min-width: 376px) {
+    #inputContainer{
+        width: 33.3%;
+    }
+    #resumeBord{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 30px;
+    }
+    input{
+        padding: 10PX;
+    }
+    #arrowContainer{   padding: 10PX;}
+}
